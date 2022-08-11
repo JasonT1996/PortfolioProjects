@@ -56,7 +56,6 @@ Group by Location
 order by TotalDeathCount desc
 
 
--- LET'S BREAK THINGS DOWN BY CONTINENT 
 
 
 -- Showing continent with the highest death count per population 
@@ -95,6 +94,8 @@ Join PortfolioProject..CovidVaccinations vac
 where dea.continent is not null
 order by 2,3
 
+
+RollingPeopleVaccinated/Population couldn't be achieved above as an option of CTE or Temp table can be used to achieve this
 --USE CTE
 
 With PopvsVac (Continent, Location, Date, Population,new_vaccinations, RollingPeopleVaccinated)
